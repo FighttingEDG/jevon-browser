@@ -4,7 +4,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-builder -w"
+    "pack": "electron-builder -mw"
   },
   "build": {
     "appId": "com.example.minibrowser",
@@ -24,6 +24,10 @@
           "name": "HTML Document"
         }
       ]
+    },
+    "mac": {
+      "target": ["dmg", "zip"],
+      "icon": "icon.icns"
     },
     "nsis": {
       "oneClick": false,
